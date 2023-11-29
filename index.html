@@ -270,17 +270,19 @@
         transition: all .3s linear;
       }
       .menu span {
-        display: inline-block;
+        display: none;
         width: max-content;
         padding: 0 4px;
         cursor: pointer;
-
       }
       #nav-list li:hover .menu {
         opacity: .8;
         padding: 8px 4px;
         display: grid !important;
         grid-template-columns: 1fr 1fr;
+      }
+      #nav-list li:hover span{
+        display: inline-block;
       }
     </style>
   </head>
