@@ -9,7 +9,7 @@
         padding: 0;
         margin: 0;
       }
-      body{
+      body {
         display: flex;
         min-height: 100vh;
         flex-direction: column;
@@ -272,7 +272,7 @@
         opacity: 0;
         background-color: #c9171e;
         transform: translate(-50%, 100%);
-        transition: all .3s linear;
+        transition: all 0.3s linear;
       }
       .menu span {
         display: none;
@@ -281,12 +281,12 @@
         cursor: pointer;
       }
       #nav-list li:hover .menu {
-        opacity: .8;
+        opacity: 0.8;
         padding: 8px 4px;
         display: grid !important;
         grid-template-columns: 1fr 1fr;
       }
-      #nav-list li:hover span{
+      #nav-list li:hover span {
         display: inline-block;
       }
     </style>
@@ -524,12 +524,7 @@
       };
       scrollView.onscroll = debounce((e) => {
         e.preventDefault();
-        if (
-          scrollView.scrollTop + scrollView.clientHeight ===
-          scrollView.scrollHeight
-        ) {
-          carouselScroll();
-        }
+        carouselScroll();
       }, 50);
       for (let e of tab.children) {
         e.addEventListener("mouseover", (e) => {
